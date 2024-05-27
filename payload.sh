@@ -76,3 +76,19 @@ rm -rf .zshrc
 cp ~/things/.zshrc ~/.zshrc
 
 
+# light dm
+
+
+sudo pacman -S lightdm
+
+cp ~/things/keys.conf /etc/lightdm
+cp ~/things/lightdm.conf /etc/lightdm
+cp ~/things/lightdm-gtk-greeter.conf /etc/lightdm
+cp ~/things/ /etc/lightdm
+cp ~/things/users.conf /etc/lightdm
+cp ~/things/Xsession /etc/lightdm
+
+systemctl enable lightdm
+
+
+
