@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo PLEASE PUT THIS FOLDER IN ~/things
+echo welcome to my script!!!
 
 # sudo check
 
@@ -36,7 +36,7 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 
 rm -rf /etc/pacman.conf
 
-cp ~/things/pacman.conf /etc/pacman,conf
+cp ~/archsetup/pacman.conf /etc/pacman,conf
 
 sudo pacman -Sy
 
@@ -62,7 +62,7 @@ yay -S vimix-gtk-themes vimix-cursors vimmix-icon-theme
 
 cd /etc/ 
 rm -rf environment 
-cp ~/things/environment /etc/environment
+cp ~/archsetup/environment /etc/environment
 
 # oh my zsh install
 
@@ -73,7 +73,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 rm -rf .zshrc
 
-cp ~/things/.zshrc ~/.zshrc
+cp ~/archsetup/.zshrc ~/.zshrc
 
 
 # light dm
@@ -81,12 +81,12 @@ cp ~/things/.zshrc ~/.zshrc
 
 sudo pacman -S lightdm
 
-cp ~/things/keys.conf /etc/lightdm
-cp ~/things/lightdm.conf /etc/lightdm
-cp ~/things/lightdm-gtk-greeter.conf /etc/lightdm
-cp ~/things/ /etc/lightdm
-cp ~/things/users.conf /etc/lightdm
-cp ~/things/Xsession /etc/lightdm
+cp ~/archsetup/keys.conf /etc/lightdm
+cp ~/archsetup/lightdm.conf /etc/lightdm
+cp ~/archsetup/lightdm-gtk-greeter.conf /etc/lightdm
+cp ~/archsetup/ /etc/lightdm
+cp ~/archsetup/users.conf /etc/lightdm
+cp ~/archsetup/Xsession /etc/lightdm
 
 systemctl enable lightdm
 
